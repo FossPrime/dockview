@@ -512,7 +512,7 @@ export class Splitview {
                     this.layoutViews();
                 };
 
-                const end = (endEvent) => {
+                const end = (endEvent: MouseEvent | TouchEvent) => {
                     for (const item of this.viewItems) {
                         item.enabled = true;
                     }
